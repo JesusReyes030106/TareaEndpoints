@@ -1,0 +1,162 @@
+{
+  "info": {
+    "_postman_id": "4eebe9e4-e9d5-4f66-a186-f9de5fda01e5",
+    "name": "Endpoints Web",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45476896",
+    "_collection_link": "https://go.postman.co/collection/45476896-4eebe9e4-e9d5-4f66-a186-f9de5fda01e5?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetAll",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{LocalhostWeb}}/api/v1/products/getAll",
+          "host": [
+            "{{LocalhostWeb}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "getAll"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{LocalhostWeb}}/api/v1/products/getById/26",
+          "host": [
+            "{{LocalhostWeb}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "getById",
+            "26"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "NewProduct",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Teclado Gamer RGB\",\r\n  \"price\": 850.50,\r\n  \"stock\": 15,\r\n  \"description\": \"Teclado mecánico switches rojos\",\r\n  \"brand\": \"Corsair\",\r\n  \"img\": \"teclado.png\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{LocalhostWeb}}/api/v1/products/create",
+          "host": [
+            "{{LocalhostWeb}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateProduct",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Teclado Gamer RGB V2\",\r\n  \"price\": 899.99,\r\n  \"stock\": 12,\r\n  \"description\": \"Versión actualizada con switches silent\",\r\n  \"brand\": \"Corsair\",\r\n  \"img\": \"teclado_v2.png\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{LocalhostWeb}}/api/v1/products/update/26",
+          "host": [
+            "{{LocalhostWeb}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "update",
+            "26"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ChangePrice",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"price\": 750.00\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{LocalhostWeb}}/api/v1/products/change-price/26",
+          "host": [
+            "{{LocalhostWeb}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "change-price",
+            "26"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteProduct",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{LocalhostWeb}}/api/v1/products/delete/26",
+          "host": [
+            "{{LocalhostWeb}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "products",
+            "delete",
+            "26"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

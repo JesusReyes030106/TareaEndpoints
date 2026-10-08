@@ -1,0 +1,10 @@
+{
+  "name": "server-with-mysql2-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  }
+}
